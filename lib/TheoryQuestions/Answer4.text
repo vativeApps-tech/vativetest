@@ -1,0 +1,2 @@
+profile build is used for test and anylayze performance of application and  app behavior under real-world conditions before releasing to production.
+you can use release build for push to production .

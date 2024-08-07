@@ -1,0 +1,29 @@
+
+once is immutable object initialized its does not change its value 
+
+class Person {
+ final String name;
+ const Person(this.name);
+}
+void main() {
+ const Person person = Person('Talha');
+ print(person.name); // Output: John
+// Attempting to modify an immutable object results in a compile-time error
+ person.name = 'Talha'; // Error: Setter not found: 'name'.
+}
+
+immutable is prefered becouse it boost performance of application it call only once
+immutable objects tend to be more efficient than mutable objects, because they can be safely shared and reused without the need to create new objects. This can be particularly important in performance-critical code, where every millisecond counts.
+
+if you need to update large list of any type of data you can go with mutable its more efficient when you have to update large list
+
+class Person {
+   String name;
+   Person(this.name);
+}
+void main() {
+   Person person = Person('Talha');
+ print(person.name);  
+  person.name = 'Talha';  
+  print(person.name);
+}

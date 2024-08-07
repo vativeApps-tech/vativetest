@@ -1,0 +1,14 @@
+1 const does not change its value and non const variable change his value once its intialized
+const variables are evaluated at compile time and are more efficient in terms of performance.
+but when you need a variable that can change his value you should not declare as const 
+
+
+void main() {
+  const a = 'abc';
+  a  = 'nicssss';
+}
+when you are change const value this error occurs
+compileDDC
+main.dart:3:3: Error: Can't assign to the const variable 'a'.
+  a  = 'nicssss';
+  ^
